@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body >
+    
+    <div class="div">
+        <input type="text" placeholder="Product Name" id="productName">
+        <input type="text" placeholder="Produce Img" id="productImg">
+        <input type="text" placeholder="Product Description" id="productDescription">
+        <input type="text" placeholder="Product Price" id="productPrice">
+        <button id="addButton"> Add Product </button>
+
+   </div>
+    <section id="productList" class="add_prod">
+           <div >
+               <h2 class="h2" >  </h2>
+           </div>
+    </section>
+    
+
+
+    <!-- BackEnd -->
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyBQwWa-m8RCsAKqu5t36djIbuxb6oFoNwM",
+            authDomain: "adminshop-9ed8f.firebaseapp.com",
+            databaseURL: "https://adminshop-9ed8f.firebaseio.com",
+            projectId: "adminshop-9ed8f",
+            storageBucket: "adminshop-9ed8f.appspot.com",
+            messagingSenderId: "553744581592",
+            appId: "1:553744581592:web:d867cbea99051bbabee8ad",
+            measurementId: "G-PZL4G3M863"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

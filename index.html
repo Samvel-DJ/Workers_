@@ -1,4 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+      </div>
+      <div class="div">
+        <input type="text" placeholder="Product Name" id="productName">
+        <input type="text" placeholder="Produce Img" id="productImg">
+        <input type="text" placeholder="Product Description" id="productDescription">
+        <input type="text" placeholder="Product Price" id="productPrice">
+        <button id="addButton"> Add Product </button>
+
+   </div>
+    <section id="productList" class="add_prod">
+           <div >
+               <h2 class="h2" >  </h2>
+           </div>
+    </section>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyBQwWa-m8RCsAKqu5t36djIbuxb6oFoNwM",
+            authDomain: "adminshop-9ed8f.firebaseapp.com",
+            databaseURL: "https://adminshop-9ed8f.firebaseio.com",
+            projectId: "adminshop-9ed8f",
+            storageBucket: "adminshop-9ed8f.appspot.com",
+            messagingSenderId: "553744581592",
+            appId: "1:553744581592:web:d867cbea99051bbabee8ad",
+            measurementId: "G-PZL4G3M863"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <script src="./src/main.js"></script>
+    
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,6 +77,11 @@
 </head>
 
 <body >
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+      </div>
     
     <div class="div">
         <input type="text" placeholder="Product Name" id="productName">
@@ -26,7 +99,7 @@
     
 
 
-    <!-- BackEnd -->
+   
     
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 
@@ -51,4 +124,4 @@
     <script src="./main.js"></script>
 </body>
 
-</html>
+</html> -->
